@@ -1,5 +1,5 @@
 let deals_poster = document.querySelector(".deals_poster");
-
+console.log("change");
 let posterData = [
   {
     url: "https://images.bewakoof.com/uploads/grid/app/New-thumbnail-DOTD-Men-1667900427.gif",
