@@ -1,0 +1,71 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.background{
+    background-image: linear-gradient(#fffefc,#fff5ca);
+    /* border: 1px solid black; */
+    margin-top:8px ;
+    height: 90vh;
+}
+.otpContainer {
+    background-color: white;
+  /* border: 1px solid red; */
+  width: 70%;
+  height: 80vh;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  color: grey;
+  letter-spacing: 1px;
+}
+.otpInfo {
+  /* border: 1px solid rgb(114, 220, 39); */
+  margin: 40px auto;
+  width: 40%;
+  text-align: center;
+}
+.otpInfo > p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;
+}
+.otpInfo > p:nth-child(2) {
+  font-size: 14px;
+  /* font-weight: 700; */
+  color: grey;
+  letter-spacing: 1px;
+}
+.otpInfo > p:nth-child(3) {
+  font-size: 18px;
+  font-weight: 700;
+  color: grey;
+  letter-spacing: 1px;
+}
+.otpBox {
+  /* border: 1px solid red; */
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.otpBox + p {
+  color: #42a2a2;
+}
+.otpBox > input {
+  width: 10%;
+  height: 50px;
+  display: block;
+  padding-left: 30px;
+}
+#otpsubmit {
+  background-color: #989898;
+  width: 420px;
+  height: 45px;
+  color: #eeeeee;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 20px 0px;
+  border: none;
+}
