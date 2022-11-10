@@ -74,12 +74,16 @@
 #couponImage {
   cursor: pointer;
 }
+#couponImage>img{
+  width: 100%;
+}
 
 .popular_categories {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   cursor: pointer;
+  /* border: 1px solid red; */
 }
 #heading_popular_category,
 #discount,
@@ -90,6 +94,10 @@
   font-weight: bold;
   font-size: large;
   letter-spacing: 1px;
+}
+.popular_categories>div{
+  /* border: 1px solid red; */
+  text-align: center;
 }
 
 .discount_box {

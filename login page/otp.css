@@ -54,10 +54,10 @@
   color: #42a2a2;
 }
 .otpBox > input {
-  width: 10%;
+  width: 8%;
   height: 50px;
   display: block;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 #otpsubmit {
   background-color: #989898;
