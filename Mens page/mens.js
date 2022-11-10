@@ -301,7 +301,12 @@ function displayProduct(data){
     data.forEach(elem => {
 
         let productCard=document.createElement("div")
-
+        productCard.addEventListener("click",function(){
+        let individual_data=[]
+        individual_data.push(elem)
+        localStorage.setItem("clicked-product",JSON.stringify(individual_data))
+        window.location.href = "../individual product page/product.html";    
+        })
         let image=document.createElement("img")
         image.src=elem.main_img
         
