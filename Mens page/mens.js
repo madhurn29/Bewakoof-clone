@@ -296,7 +296,8 @@ let productData = [
 let products=document.querySelector("#products")
 
 function displayProduct(data){
-console.log(data)
+    products.innerHTML=""
+    console.log(data)
     data.forEach(elem => {
 
         let productCard=document.createElement("div")
@@ -337,3 +338,11 @@ console.log(data)
 }
 displayProduct(productData)
 
+let search =document.querySelector("#search")
+search.addEventListener("input",function(){
+let x=search.value 
+let search_data=productData.filter((elem)=>{
+    return elem.title.toLowerCase().includes(x.toLowerCase())
+})
+displayProduct(search_data)
+})
