@@ -103,7 +103,7 @@ let productData = [
       "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748632-1.jpg",
     img1: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748632-1.jpg",
     img2: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748637-2.jpg",
-    img3: "https://images.bewakoof.com/web/play-button-1553774783.png",
+    img3: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748648-4.jpg",
     img4: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748642-3.jpg",
     img5: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748648-4.jpg",
     brand: "Stoopid",

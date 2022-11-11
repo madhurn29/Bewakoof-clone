@@ -20,25 +20,35 @@
   /* border: 1px solid red; */
   display: flex;
   width: 52%;
+  /* height: auto; */
 }
 #small_images {
   /* border: 1px solid green; */
   display: grid;
-  width: 20%;
-  grid-template-rows: repeat(5, 1fr);
-  gap: 5px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  width: 30%;
+  /* height: auto; */
+  height: max-content;
+
+  align-content: center;
+  /* grid-template-rows: repeat(5, 1fr); */
+  grid-template-columns: repeat(1,1fr);
+  /* gap: 5px; */
+  /* text-align: center; */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
 }
 #small_images > img {
-  width: 80%;
-  margin: auto;
+  width: 60%;
+  /* border: 1px solid black; */
+  margin:10px auto;
 }
 #main_image {
   /* border: 1px solid violet; */
   width: 100%;
-  margin-top: 8px;
+  margin-top: 25px;
+  height: max-content;
 }
 #main_image > img {
   width: 100%;

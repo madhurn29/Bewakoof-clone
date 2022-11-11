@@ -1,0 +1,149 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+
+#navbar{
+    /* border: 1px solid red; */
+    /* width: 70%; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 40px;
+    display: flex;
+
+}
+#navbar>div{
+    /* border: 1px solid black; */
+    width: 60%;
+    margin: auto;
+    /* font-size:24 ; */
+}
+#navbar>div>a>img{
+    /* border: 1px solid green; */
+    width: 10%;
+}
+
+#container{
+    /* border: 1px solid black; */
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.payment-side{
+    border: 1px solid black;
+    width: 65%;
+    padding: 5px;
+}
+
+.payment_method{
+    /* border: 1px solid red; */
+    width: 38%;
+}
+.payment_info{
+    display: flex;
+    justify-content: space-between;
+}
+.payment_info>div{
+    /* border: 1px solid green; */
+}
+#heading{
+    /* border: 1px solid red; */
+    width: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.card_details{
+    /* border: 1px solid green; */
+    width: 60%;
+}
+.payment_method>div{
+height: 60px;
+border: 1px solid #cccccc;
+display: flex;
+align-items: center;
+padding-left: 8px;
+}
+.payment_method>div>img{
+    width: 10%;
+    margin-right: 8px;
+}
+.icons{
+/* border: 1px solid red; */
+height: 40px;
+width: 60%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.icons>img{
+    width: 15%;
+}
+#card_Number{
+    width: 98%;
+}
+input[type=text],input[type=number] {
+    border: none;
+    border-bottom: 1px solid rgb(176, 173, 173);
+    height: 40px;
+    
+}
+#month{
+    width: 200px;
+}
+.cvv{
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 3px;
+    justify-content: space-between;
+}
+#name{
+    width: 98%;
+}
+.savingOpt{
+    display: flex;
+    align-items: center;
+    margin-top:15px ;
+    font-size: 14px;
+/* border: 1px solid red; */
+height: 40px;
+}
+.warning{
+    /* border: 1px solid red; */
+    height: 40px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+#pay{
+    width: 100%;
+    margin: 15px auto;
+    display: block;
+    height: 50px;
+    /* margin-top: 15px; */
+    border: none;
+border-radius: 5px;
+}
+.summary{
+    /* border: 1px solid black; */
+    width: 30%;
+    padding: 10px;
+    border-left: 1px solid black;
+}
+#summary_head{
+    font-size:16px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+#priceTag,#discountBox,#shipping{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+#finalBox{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+}

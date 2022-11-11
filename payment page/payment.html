@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script
+        src="https://kit.fontawesome.com/9a460dffa9.js"
+        crossorigin="anonymous"
+        ></script>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./payment.css" />
+        <!-- <link rel="stylesheet" href="../index/nav.css" /> -->
+        <title>Payment Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <a href="../index/index.html" ><img id="logo" src="../index/black logo.png" alt="" /></a>
+        </div>
+    </div>
+    <div id="container">
+        <div class="payment-side">
+            <div id="heading">Choose your payment method</div>
+            <div class="payment_info">
+                <div class="payment_method">
+                    <div><img src="https://images.bewakoof.com/web/bank-card-fill-1645697857.svg" alt="">  Debit/Credit Card</div>
+                    <div><img src="https://images.bewakoof.com/web/Group-1645705428.png" alt=""> Wallet</div>
+                    <div><img src="https://images.bewakoof.com/web/upi-icon-1645705429.png" alt=""> UPI</div>
+                    <div><img src="https://images.bewakoof.com/web/nb-icon-1645705428.png" alt=""> Net banking</div>
+                    <div> <img src="https://images.bewakoof.com/web/cod-icon-1645705427.png" alt="">
+                        Cash On delivery</div>
+                </div>
+                <div class="card_details">
+                    <div class="icons">
+                        <img src="https://images.bewakoof.com/web/ic-visa-gray-payment-v1.jpg" alt="">
+                        <img src="https://images.bewakoof.com/web/ic-master-card-payment-v1.jpg" alt="">
+                        <img src="https://images.bewakoof.com/web/ic-rupay-payment-v1.jpg" alt="">
+                        <img src="https://images.bewakoof.com/web/ic-american-express-payment-v1.jpg" alt="">
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Card Number" name="card number"  id="card_Number" maxlength="16">
+                    </div>
+                    <div class="cvv">
+                        <input type="number" placeholder="Valid through(MM/YY)" id="month">
+                        <input type="number" placeholder="CVV" id="cvv" max="999">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Name on Card" id="name">
+                    </div>
+                    <div class="savingOpt">
+                        <input type="checkbox" name="save" class="checkmark">
+                        <label for="save">Save card details for later </label> 
+                    </div>
+                    <div class="warning">
+                        This transaction you make is totally secure. We don't save your CVV number. 
+                    </div>
+                    <div>
+                        <button id="pay">Pay</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="summary">
+            <div id="summary_head" >Price Summary</div>
+            <div id="priceTag">
+                <p>Total MRP (Incl. of taxes)</p>
+                <p id="totalMRP">1439</p>
+            </div>
+            <div id="shipping">
+                <p>Shipping Charges</p>
+                <p id="free">FREE</p>
+            </div>
+            <div id="discountBox">
+                <p>Discount on MRP</p>
+                <p id="discount">154</p>
+                
+            </div>
+            <hr>
+            <div id="finalBox">
+                <p>Final Amount</p>
+                <p id="finalPrice">699</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="./payment.js"></script>
