@@ -103,7 +103,7 @@ let productData = [
       "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748632-1.jpg",
     img1: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748632-1.jpg",
     img2: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748637-2.jpg",
-    img3: "https://images.bewakoof.com/web/play-button-1553774783.png",
+    img3: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748648-4.jpg",
     img4: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748642-3.jpg",
     img5: "https://images.bewakoof.com/t1080/feel-most-alive-half-sleeve-t-shirt-navy-blue-307089-1655748648-4.jpg",
     brand: "Stoopid",
@@ -296,11 +296,17 @@ let productData = [
 let products=document.querySelector("#products")
 
 function displayProduct(data){
-console.log(data)
+    products.innerHTML=""
+    console.log(data)
     data.forEach(elem => {
 
         let productCard=document.createElement("div")
-
+        productCard.addEventListener("click",function(){
+        let individual_data=[]
+        individual_data.push(elem)
+        localStorage.setItem("clicked-product",JSON.stringify(individual_data))
+        window.location.href = "../individual product page/product.html";    
+        })
         let image=document.createElement("img")
         image.src=elem.main_img
         
@@ -337,3 +343,11 @@ console.log(data)
 }
 displayProduct(productData)
 
+let search =document.querySelector("#search")
+search.addEventListener("input",function(){
+let x=search.value 
+let search_data=productData.filter((elem)=>{
+    return elem.title.toLowerCase().includes(x.toLowerCase())
+})
+displayProduct(search_data)
+})

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -15,9 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./mens.css" />
+    <link rel="stylesheet" href="./product.css" />
     <link rel="stylesheet" href="../index/nav.css" />
-    <title>Mens Page</title>
+
+    <title>Product page</title>
   </head>
   <body>
     <div id="topbarsection">
@@ -35,9 +35,11 @@
       </div>
     </div>
     <div id="navbar">
-      <a href="../index/index.html"><img src="../index/black logo.png" alt="" /></a>
+      <a href="../index/index.html"
+        ><img src="../index/black logo.png" alt=""
+      /></a>
       <div id="navtags">
-        <a href="">MEN</a>
+        <a href="../Mens page/mens.html">MEN</a>
         <a href="">WOMEN</a>
         <a href="">MOBILE COVERS</a>
         <div class="mens_menu">
@@ -77,7 +79,8 @@
       <div id="searchbar">
         <input
           type="text"
-          placeholder=" &#xF002; Search by product, category or collection" style="font-family:Montserrat, sans-serif, FontAwesome"
+          placeholder=" &#xF002; Search by product, category or collection"
+          style="font-family: Montserrat, sans-serif, FontAwesome"
           id="search"
         />
         <div class="login">
@@ -105,36 +108,94 @@
       </div>
     </div>
     <p id="location_indicator">Home <span>/</span> Mens Clothing</p>
-    <div class="discount_image">
-      <img src="https://images.bewakoof.com/uploads/category/desktop/INSIDE-BANNER_DESKTOP_FREEBIE-1667998388.jpg" alt="">
-    </div>
-    <div id="category_name">
-      <p>Men Clothing (2154)</p>
-    </div>
-    <div class="container">
-      <div class="filter">
-        <p>FILTERS</p>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
+    <div id="container">
+      <div id="image_side">
+        <div id="small_images">
+          <img
+            src="https://images.bewakoof.com/t1080/dab-marshmello-200415-1655748780-1.jpg"
+            alt="" id="img-1"
+          />
+          <img
+            src="https://images.bewakoof.com/t1080/dab-marshmello-200415-1655748780-1.jpg"
+            alt="" id="img-2"
+          />
+          <img
+            src="https://images.bewakoof.com/t1080/dab-marshmello-200415-1655748780-1.jpg"
+            alt="" id="img-3"
+          />
+          <img
+            src="https://images.bewakoof.com/t1080/dab-marshmello-200415-1655748780-1.jpg"
+            alt="" id="img-4"
+          />
+          <img
+            src="https://images.bewakoof.com/t1080/dab-marshmello-200415-1655748780-1.jpg"
+            alt="" id="img-5"
+          />
+        </div>
+        <div id="main_image">
+          <img
+            src="https://images.bewakoof.com/t1080/dab-marshmello-200415-1655748780-1.jpg"
+            alt="" id="img-0"
+          />
+        </div>
       </div>
-      <div id="products">
+      <div id="info_side">
+        <div class="info-box">
+          <p id="brand_name">bewakoof</p>
+          <p id="title">
+            Lorem ipsum dolor sit amet, consecteture sapiente fuga.
+          </p>
+          <p id="price"><span>₹</span> 599</p>
+          <p id="tax-price">Inclusive of all taxes</p>
+          <div class="fancy-tag">
+            <p>OVERSIZED FIT</p>
+            <p>DESIGN OF THE DAY</p>
+          </div>
+          <hr />
+          <p>
+            Tribe Members get an extra discount of <span>₹ 40</span> and FREE
+            shipping. <span><a href="">Learn More</a></span>
+          </p>
+          <hr />
+          <p id="size_tag">SELECT SIZE</p>
+          <div class="size-buttons">
+            <button>S</button>
+            <button>M</button>
+            <button>L</button>
+            <button>XL</button>
+            <button>2XL</button>
+            <button>3XL</button>
+          </div>
+          <div class="add-buttons">
+            <button id="bag_button"><i class="fa-solid fa-bag-shopping"></i> ADD TO BAG</button>
+            <button><i class="fa-regular fa-heart"></i> WISHLIST</button>
+          </div>
+          <hr>
+          <div class="extra">
+              <p>SAVE EXTRA WITH 3 OFFERS</p>
+              <p><i class="fa-solid fa-plus"></i></p>
+          </div>
+          <hr>
 
+          <div class="extra">
+              <p>PRODUCT DESCRIPTION</p>
+              <p><i class="fa-solid fa-plus"></i></p>
+          </div>
+          <hr>
+
+          <div class="extra">
+              <p>15 DAYS RETURN & EXCHANGE POLICY</p>
+              <p><i class="fa-solid fa-plus"></i></p>
+          </div>
+          <hr>
+
+          <div class="extra">
+              <p>GET THIS BY 24th NOV</p>
+              <p><i class="fa-solid fa-plus"></i></p>
+          </div>
+        </div>
       </div>
     </div>
-    <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
   </body>
 </html>
-<script src="./mens.js"></script>
+<script src="./product.js"></script>
