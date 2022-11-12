@@ -1,6 +1,11 @@
 let productPageDAta=JSON.parse(localStorage.getItem("clicked-product"))
 console.log(productPageDAta)
 
+let loggedin=localStorage.getItem("islogged")
+if(loggedin){
+  document.querySelector("#islogged").innerText="User"
+}
+
 function displaydata(){
     let mainImage=document.querySelector("#img-0")
     mainImage.src=productPageDAta[0].main_img
@@ -29,8 +34,13 @@ function displaydata(){
     let bagbtn=document.querySelector("#bag_button")
     bagbtn.addEventListener("click",function(){
         let bagData= JSON.parse(localStorage.getItem("cart_data"))||[]
-        bagData.push(productPageDAta[0])
+        let q={
+            ...productPageDAta[0],
+            quantity:1
+        }
+        bagData.push(q)
         console.log(bagData)
+
         localStorage.setItem("cart_data",JSON.stringify(bagData))
         alert("Product added to Bag")
     })

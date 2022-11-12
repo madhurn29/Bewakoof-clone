@@ -6,7 +6,9 @@ submit.addEventListener("click", function () {
   if (x.length != 10) {
     console.log(x.length);
     alert("Please Enter a valid Number");
-  } else if (x == 1234567890) {
-    window.location.href = "./otp.html";
+  } else {
+    localStorage.setItem("number",x)
+    window.location.href = "../signup page/signup.html";
+    // window.location.href = "./otp.html";
   }
 });

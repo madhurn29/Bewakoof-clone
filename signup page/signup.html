@@ -4,20 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script
-      src="https://kit.fontawesome.com/9a460dffa9.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./mens.css" />
+    <link rel="stylesheet" href="./signup.css" />
     <link rel="stylesheet" href="../index/nav.css" />
-    <title>Mens Page</title>
+    <title>Sign up</title>
   </head>
   <body>
     <div id="topbarsection">
@@ -35,9 +24,11 @@
       </div>
     </div>
     <div id="navbar">
-      <a href="../index/index.html"><img src="../index/black logo.png" alt="" /></a>
+      <a href="../index/index.html"
+        ><img src="../index/black logo.png" id="logo" alt="" style="margin-top: 6px;"
+      /></a>
       <div id="navtags">
-        <a href="">MEN</a>
+        <a href="../Mens page/mens.html">MEN</a>
         <a href="">WOMEN</a>
         <a href="">MOBILE COVERS</a>
         <div class="mens_menu">
@@ -77,13 +68,13 @@
       <div id="searchbar">
         <input
           type="text"
-          placeholder=" &#xF002; Search by product, category or collection" style="font-family:Montserrat, sans-serif, FontAwesome"
+          placeholder="Search by product,category or collection"
           id="search"
         />
-        <div class="login" id="islogged">
+        <div class="login">
           <p>|</p>
-          <a href="../login page/login.html">Login</a>
-
+          <!-- <a href="">Login</a> -->
+          
           <div id="flag">
             <a href=""><img
               src="https://images.bewakoof.com/web/ic-web-head-wishlist.svg"
@@ -104,37 +95,50 @@
         </div>
       </div>
     </div>
-    <p id="location_indicator">Home <span>/</span> Mens Clothing</p>
-    <div class="discount_image">
-      <img src="https://images.bewakoof.com/uploads/category/desktop/INSIDE-BANNER_DESKTOP_FREEBIE-1667998388.jpg" alt="">
-    </div>
-    <div id="category_name">
-      <p>Men Clothing (2154)</p>
-    </div>
-    <div class="container">
-      <div class="filter">
-        <p>FILTERS</p>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-      </div>
-      <div id="products">
 
+    <!-- otp container -->
+    <div class="background">
+      <div class="container">
+        <div class="posterBox">
+            <img src="https://images.bewakoof.com/web/desktop-sign-up-banner--1623760676.png" alt="">
+        </div>
+        <div class="signupForm">
+            <div class="form">
+                <div>
+                <p>SIgn Up</p>
+                </div>
+                <div>
+                    <p>Hi new buddy, let's you started with the Stoopid!</p>  
+                </div>
+                <div class="details">
+
+                    <div>
+                        <input type="text" placeholder="Name" id="Name">
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Mobile" id="mobile">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email Id" id="mail">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password" id="pass"
+                        >
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox"> <p>I want to recieve order updates on Whatsapp</p>
+                </div>
+                <div>
+                    <button id="proceed">PROCEED</button>
+                </div>
+            </div>
+        </div>
+
+        
+        
       </div>
     </div>
-    <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
   </body>
 </html>
-<script src="./mens.js"></script>
+<script src="../signup page/signup.js"></script>

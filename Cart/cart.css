@@ -118,13 +118,13 @@ button+div+div+div{
 
 #coupon_box>div{
     display: flex;
-    width: 90%;
+    width: 95%;
     height: 25px;
     margin: 12px auto;
     align-items: center;
     justify-content: space-between;
     /* border: 1px solid red; */
-    padding: 5px;
+    padding: 1px;
     border-radius: 5px;
     /* margin-top: 8px; */
     padding: 5px 5px;

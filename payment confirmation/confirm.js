@@ -15,8 +15,8 @@ login.addEventListener("click", function () {
   console.log(a, b, c, d);
   if (a == 1 && b == 2 && c == 3 && d == 4) {
     // <a href=""></a>
-    window.location.href = "../index/index.html";
-    localStorage.setItem("islogged",true)
+    window.location.href = "./thank.html";
+    
   } else {
     alert("Incorrect OTP");
   }

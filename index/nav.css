@@ -19,13 +19,15 @@
     padding: 4px;
     text-align: center;
   }
-  /* #logo{
-    border: 1px solid red;
-    margin-top: 2px;
-  } */
+  #logo{
+    /* border: 1px solid red; */
+    /* margin-top: 5px; */
+
+  }
   #topbar > div > a {
     text-decoration: none;
     margin: 8px 8px;
+    /* border: 1px solid blue; */
   }
   #navbar {
     /* border: 1px solid red; */

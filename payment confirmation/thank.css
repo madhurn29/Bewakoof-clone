@@ -1,0 +1,19 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+  .background{
+      background-image: linear-gradient(#fffefc,#fff5ca);
+      /* border: 1px solid black; */
+      margin-top:8px ;
+      height: 90vh;
+  }
+  .thanks{
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: auto;
+    height: 500px;
+    text-align: center;
+  }
+  .thanks img{
+    width: 80%;
+  }
