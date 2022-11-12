@@ -102,3 +102,6 @@ input[type="submit"]{
 text-decoration: none;
 color: #42A2A2;
 }
+#submit:hover{
+  background-color: #A0A0A0;
+}

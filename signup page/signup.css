@@ -1,0 +1,93 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+  .background{
+      background-image: linear-gradient(#fffefc,#fff5ca);
+      /* border: 1px solid black; */
+      margin-top:8px ;
+      height: 90vh;
+  }
+  .container{
+    /* border: 1px solid red; */
+    width: 55%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+  }
+  .posterBox{
+    /* border: 1px solid black; */
+    width: 40%;
+    height: auto;
+   /* margin-top: 35px; */
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .posterBox>img{
+    width: 90%;
+  }
+
+
+  .signupForm{
+    /* border: 1px solid blue; */
+    background-color: #fff;
+    width: 50%;
+    /* height: fit-content; */
+    /* margin-top: 35px; */
+  }
+
+  .form{
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: 10px auto;
+  }
+  .form>div{
+    /* border: 1px solid green; */
+  }
+  input[type=text],input[type=number],input[type=email],input[type=password] {
+    border: none;
+    border-bottom: 1px solid rgb(176, 173, 173);
+    height: 40px;
+    width: 100%;
+    letter-spacing: 1px;
+    height: 50px;
+}
+
+
+#proceed{
+    width: 100%;
+    margin: 15px auto;
+    display: block;
+    height: 50px;
+    /* margin-top: 15px; */
+    border: none;
+border-radius: 5px;
+background-color: #989898;
+color: #fff;
+font-size: 20px;
+}
+.checkbox{
+    font-size: 14px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+.checkbox>p{
+  margin-left: 8px;
+}
+.form>div:nth-child(1){
+    /* background-color: aqua; */
+    font-size: 24px;
+    font-weight: 700;
+}
+.form>div:nth-child(2){
+    /* background-color: aqua; */
+    font-size: 18px;
+    font-weight: 700;
+}
+#proceed:hover{
+  background-color: #42A2A2;
+}

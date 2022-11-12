@@ -1,3 +1,8 @@
+// let loggedin=localStorage.getItem("islogged")
+// if(loggedin){
+//   document.querySelector("#islogged").innerText="User"
+// }
+
 let productData = [
   {
     id: 1,

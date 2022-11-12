@@ -90,8 +90,8 @@ input[type=text],input[type=number] {
     height: 40px;
     
 }
-#month{
-    width: 200px;
+#expiry_date{
+    width: 180px;
 }
 .cvv{
     /* border: 1px solid green; */
@@ -146,4 +146,7 @@ border-radius: 5px;
     justify-content: space-between;
     font-size: 14px;
     font-weight: 700;
+}
+#pay:hover{
+    background-color: #42a2a2;
 }

@@ -176,3 +176,10 @@ letter-spacing: 1px;
     /* background-color: #42a2a2; */
     font-weight: 900;
 }
+#bag_button:hover{
+  background-color: #42a2a2;
+}
+#bag_button:focus{
+  background-color: #42a2a2;
+  color: #fff;
+}
