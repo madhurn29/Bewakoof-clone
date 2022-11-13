@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <script
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <script
         src="https://kit.fontawesome.com/9a460dffa9.js"
         crossorigin="anonymous"
-        ></script>
-        <link
+      ></script>
+      <link
         href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
         rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./cart.css" />
-        <!-- <link rel="stylesheet" href="../index/nav.css" /> -->
-        <title>Cart Page</title>
-      </head>
-</head>
-<body>
-    
-      <div id="navbar">
+      />
+      <link rel="stylesheet" href="./cart.css" />
+      <!-- <link rel="stylesheet" href="../index/nav.css" /> -->
+      <title>Cart Page</title>
+    </head>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <a href="../index.html"
+          ><img id="logo" src="../index/black logo.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="bag_quantity">
+      <p>My Bag</p>
+      <p id="itemNumbers">3 items</p>
+    </div>
+    <div id="container">
+      <div id="productSide">
+        <div class="deliveryMsg">
+          <div>
+            <img src="https://images.bewakoof.com/web/Red-truck.png" alt="" />
+          </div>
+          <p>Yay! You get FREE Delivery on this order</p>
+        </div>
+        <div id="cart-products">
+          <!-- appned here -->
+        </div>
+      </div>
+      <div id="priceSide">
+        <button>Save Extra ₹120 with TriBe</button>
         <div>
-            <a href="../index/index.html" ><img id="logo" src="../index/black logo.png" alt="" /></a>
+          <p>
+            Whistles! Get extra 10% cashback on all prepaid orders above Rs.499.
+            Use Code - PREP10.
+          </p>
         </div>
-      </div>
-      <div class="bag_quantity">
-        <p>My Bag </p>
-        <p id="itemNumbers"> 3 items</p>
-      </div>
-      <div id="container">
-        <div id="productSide">
-
-            <div class="deliveryMsg">
-                <div>
-                    <img src="https://images.bewakoof.com/web/Red-truck.png" alt="">
-                </div>
-                <p>Yay! You get FREE Delivery on this order</p>
-            </div>
-            <div id="cart-products">
-                <!-- appned here -->
-            </div>
+        <div>
+          <p>
+            Wohoo! Get a free gift worth Rs.399 on all prepaid orders Use Coupon
+            Code- GETFREEGIFT.
+          </p>
         </div>
-        <div id="priceSide">
-            <button>Save Extra ₹120 with TriBe</button>
+        <div id="coupon_box">
+          <div>
+            <p>Have a Coupon / Referral / Gift card ?</p>
+            <p>Redeem <i class="fa-solid fa-angles-right"></i></p>
+          </div>
+        </div>
+        <div id="price_summary">
+          <p>PRICE SUMMARY</p>
+        </div>
+        <div id="price_box">
+          <div>
+            <div>Total MRP (Incl. of taxes)</div>
+            <div id="Total_Price">0</div>
+          </div>
+          <div>
+            <div>Shipping Charges</div>
+            <div>FREE</div>
+          </div>
+          <div>
+            <div>Bag Discount</div>
+            <div id="bag_discount">0</div>
+          </div>
+          <div>
+            <div>Subtotal</div>
+            <div id="sub_total">0</div>
+          </div>
+          <div>
+            <div id="saving">
+              You are saving on this order <span id="saving"></span>
+            </div>
+          </div>
+          <div>
+            <div id="total">
+              <div>Total</div>
+              <div id="final_amount">0</div>
+            </div>
             <div>
-                <p>Whistles! Get extra 10% cashback on all prepaid orders above Rs.499. Use Code - PREP10.</p>
-                
+              <button id="toPay">CONTINUE</button>
             </div>
-            <div>
-                <p>Wohoo! Get a free gift worth Rs.399 on all prepaid orders Use Coupon Code- GETFREEGIFT.</p>
-            </div>
-            <div id="coupon_box">
-                <div>
-                    <p>Have a Coupon / Referral / Gift card ?</p>
-                <p>Redeem <i class="fa-solid fa-angles-right"></i></p>
-                </div>
-            </div>
-            <div id="price_summary">
-                <p>PRICE SUMMARY </p>
-            </div>
-            <div id="price_box">
-                <div>
-                    <div>Total MRP (Incl. of taxes)</div>
-                    <div id="Total_Price">0</div>
-                </div>
-                <div>
-                    <div>Shipping Charges</div>
-                    <div>FREE</div>
-                </div>
-                <div>
-                    <div>Bag Discount</div>
-                    <div id="bag_discount">0</div>
-                </div>
-                <div>
-                    <div>Subtotal</div>
-                    <div id="sub_total">0</div>
-                </div>
-                <div>
-                    <div id="saving">You are saving on this order <span id="saving"></span></div>
-                </div>
-                <div>
-                    <div id="total">
-                        <div>Total</div>
-                        <div id="final_amount">0</div>
-                    </div>
-                    <div>
-                        <button id="toPay">CONTINUE</button></div>
-                </div>
-
-            </div>
+          </div>
         </div>
-
       </div>
-</body>
+    </div>
+  </body>
 </html>
 <script src="./cart.js"></script>

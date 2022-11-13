@@ -3,8 +3,8 @@ let otp2 = document.querySelector("#otpNumber2");
 let otp3 = document.querySelector("#otpNumber3");
 let otp4 = document.querySelector("#otpNumber4");
 
-let number=localStorage.getItem("number")
-document.querySelector("#phone").innerText=number
+let number = localStorage.getItem("number");
+document.querySelector("#phone").innerText = number;
 
 let login = document.querySelector("#otpsubmit");
 login.addEventListener("click", function () {
@@ -15,8 +15,8 @@ login.addEventListener("click", function () {
   console.log(a, b, c, d);
   if (a == 1 && b == 2 && c == 3 && d == 4) {
     // <a href=""></a>
-    window.location.href = "../index/index.html";
-    localStorage.setItem("islogged",true)
+    window.location.href = "../index.html";
+    localStorage.setItem("islogged", true);
   } else {
     alert("Incorrect OTP");
   }
