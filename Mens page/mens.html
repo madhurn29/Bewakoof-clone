@@ -80,9 +80,9 @@
           placeholder=" &#xF002; Search by product, category or collection" style="font-family:Montserrat, sans-serif, FontAwesome"
           id="search"
         />
-        <div class="login" id="islogged">
+        <div class="login" >
           <p>|</p>
-          <a href="../login page/login.html">Login</a>
+          <a href="../login page/login.html" id="islogged">Login</a>
 
           <div id="flag">
             <a href=""><img
@@ -113,25 +113,81 @@
     </div>
     <div class="container">
       <div class="filter">
-        <p>FILTERS</p>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
-        <select name="category" id="">
-        <option value="">category</option>
-        </select>
+        <div>
+          <p>FILTERS</p><p>Clear All</p>
+        </div>
+
+        <div class="accordion"><p>Brand</p> <p><i class="fa-solid fa-chevron-down"></i></p></div>
+            <div class="panel">
+              <!-- <p id="all-brands">All</p> -->
+              <p id="stoopid-brand">Stoopid</p>
+              <p id="snitch-brand">Snitch</p>
+              <p id="campus-brand">Campus Sutra</p>
+            </div>
+
+        <div class="accordion"><p>Price</p> <p><i class="fa-solid fa-chevron-down"></i></p></div>
+            <div class="panel">
+              <!-- <p id="price-all">All</p> -->
+              <p id="price-HTL">Price: High to low</p>
+              <p id="price-LTH">Price: Low to high</p>
+            </div>
+
+        <div class="accordion"><p>Color</p> <p><i class="fa-solid fa-chevron-down"></i></p></div>
+            <div class="panel">
+              <p>Red</p>
+              <p>Black</p>
+              <p>Green</p>
+              <p>Yellow</p>
+              <p>Pink</p>
+              <p>Blue</p>
+            </div>
+        <div class="accordion"><p>Sizes</p> <p><i class="fa-solid fa-chevron-down"></i></p></div>
+            <div class="panel">
+              <p>S</p>
+              <p>M</p>
+              <p>L</p>
+              <p>XL</p>
+              <p>XXL</p>
+            </div>
+        <div class="accordion"><p>Design</p> <p><i class="fa-solid fa-chevron-down"></i></p></div>
+            <div class="panel">
+              <p>Solid</p>
+              <p>Graphic Print</p>
+              <p>Printed</p>
+              <p>Color Block</p>
+              <p>Striped</p>
+              <p>Checked</p>
+            </div>
+        <div class="accordion"><p>Fit</p> <p><i class="fa-solid fa-chevron-down"></i></p></div>
+            <div class="panel">
+              <p>Regular Fit</p>
+              <p>Oversized</p>
+              <p>Slim Fit</p>
+              <p>Relaxed Fit</p>
+              <p>Skinny</p>
+              <p>Loose Fit</p>
+            </div>
+        <div class="accordion"><p>Type</p> <p><i class="fa-solid fa-chevron-down"></i></p></div>
+            <div class="panel">
+              <p>T-shirt</p>
+              <p>Brief</p>
+              <p>Shirt</p>
+              <p>Sweatshirt/p>
+              
+            </div>
+        <div class="accordion"><p>Sleeves</p> <p><i class="fa-solid fa-chevron-down"></i></p></div>
+            <div class="panel">
+              <p>Half Sleeve</p>
+              <p>Full Sleeve</p>
+              <p>Sleeveless</p>
+              
+            </div>
+
+
+
       </div>
       <div id="products">
-
+        <!-- product data is appneded here -->
       </div>
     </div>
     <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />

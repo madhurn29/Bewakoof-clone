@@ -1,0 +1,77 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+  .background{
+      background-image: linear-gradient(#fffefc,#fff5ca);
+      /* border: 1px solid black; */
+      margin-top:8px ;
+      height: 90vh;
+  }
+  .container{
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    height: 70vh;
+    text-align: center;
+    background-color: #fff;
+  }
+  .loginBox{
+    /* border: 1px solid black; */
+    width: 40%;
+    margin: 80px  auto 100px auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  .loginBox>div:nth-child(1){
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .loginBox>div:nth-child(2){
+    /* border: 1px solid rgb(10, 107, 34); */
+    margin-top: 30px;
+  }
+  .loginBox input[type="text"],
+  .loginBox input[type="password"]{
+    width: 98%;
+    margin: 20px auto;
+    /* background-color: aqua; */
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(176, 173, 173);
+
+  }
+  input::placeholder{
+    /* font-size: 20px; */
+  }
+  .loginBox>div:nth-child(4)>a{
+    /* border: 1px solid rgb(10, 107, 34); */
+    margin-top: 40px;
+    font-weight: 16px;
+    color: #42a2a2;
+    text-decoration: none;
+  }
+  .loginBox>div:nth-child(4){
+    /* border: 1px solid rgb(10, 107, 34); */
+    margin-top: 40px;
+    font-weight: 16px;
+    color: #42a2a2;
+    text-decoration: none;
+  }
+  .loginBox>div:nth-child(5)>button{
+    /* border: 1px solid rgb(10, 107, 34); */
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 22px;
+    color: #fff;
+    background-color: #989898;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+  }

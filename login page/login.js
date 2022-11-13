@@ -1,3 +1,8 @@
+let loggedin=localStorage.getItem("islogged")
+if(loggedin){
+  document.querySelector("#islogged").innerText="User"
+}
+
 let mobile = document.querySelector("#mobile");
 
 let submit = document.querySelector("#submit");
@@ -12,3 +17,6 @@ submit.addEventListener("click", function () {
     // window.location.href = "./otp.html";
   }
 });
+document.querySelector("#loginID").addEventListener("click",function(){
+  window.location.href="./loginByid.html"
+})

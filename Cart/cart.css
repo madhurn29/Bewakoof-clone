@@ -10,6 +10,9 @@
     display: flex;
 
 }
+/* #hello{
+    border: 1px solid red;
+} */
 #navbar>div{
     /* border: 1px solid black; */
     width: 60%;
@@ -220,11 +223,15 @@ margin: 4px 8px;
 #cart-products>div>div:first-child>div>p:nth-child(1){
 font-size: 14px;
 line-height: 1px;
+/* background-color: #1d8802; */
+
 }
 #cart-products>div>div:first-child>div>p:nth-child(2){
 font-size: 18px;
 font-weight: bold;
 line-height: 10px;
+/* background-color: #1d8802; */
+
 }
 #cart-products>div>div:first-child>div>p:nth-child(3){
 font-size: 14px;

@@ -1,7 +1,7 @@
-// let loggedin=localStorage.getItem("islogged")
-// if(loggedin){
-//   document.querySelector("#islogged").innerText="User"
-// }
+let loggedin=localStorage.getItem("islogged")
+if(loggedin){
+  document.querySelector("#islogged").innerText="User"
+}
 
 let productData = [
   {
@@ -293,7 +293,7 @@ let productData = [
     img4: "https://images.bewakoof.com/t1080/dab-marshmello-200415-1655748796-4.jpg",
     img5: "https://images.bewakoof.com/t1080/dab-marshmello-200415-1655748801-5.jpg",
     brand: "Campus Sutra",
-    title: "Gyaan Half Sleeve T-Shirt Black",
+    title: "Gyaan Half Sleeve T-Shirt Red",
     price: "1269",
     offPrice: "759",
   },
@@ -356,3 +356,87 @@ let search_data=productData.filter((elem)=>{
 })
 displayProduct(search_data)
 })
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+
+let lowPrice=document.querySelector("#price-LTH")
+lowPrice.addEventListener("click",function(){
+  SortPrice("low")
+})
+
+let highPrice=document.querySelector("#price-HTL")
+highPrice.addEventListener("click",function(){
+  SortPrice("high")
+})
+
+
+function SortPrice(sorting){
+if(sorting=="low"){
+  
+  productData.sort((a,b)=> a.offPrice-b.offPrice)
+}
+else if(sorting=="high"){
+  productData.sort((a,b)=> b.offPrice-a.offPrice)
+}
+
+
+displayProduct(productData)
+}
+
+
+// filter by brand
+
+let StoopidBrand=document.querySelector("#stoopid-brand")
+
+StoopidBrand.addEventListener("click",function(){
+
+  filterBrand("Stoopid")
+  
+})
+
+let CampusBrand=document.querySelector("#campus-brand")
+
+CampusBrand.addEventListener("click",function(){
+  filterBrand("Campus Sutra")
+  
+})
+
+let SnitchBrand=document.querySelector("#snitch-brand")
+
+SnitchBrand.addEventListener("click",function(){
+
+  filterBrand("Snitch")
+  
+})
+
+
+
+
+
+
+
+function filterBrand(filtervalue){
+  let filteredData=productData.filter((elem)=>{
+    return elem.brand==filtervalue
+  })
+  displayProduct(filteredData)
+}

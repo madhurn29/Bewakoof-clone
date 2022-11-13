@@ -30,6 +30,7 @@ function diplayCartData(data){
 
         let PayPrice=document.createElement("p")
         PayPrice.innerText="₹ " +elem.offPrice
+        PayPrice.id="hello"
 
         totalPayPrice+= Number(elem.offPrice)
         finalPrice=totalPayPrice
@@ -65,23 +66,18 @@ function diplayCartData(data){
         qopt0.value=1
 
         qbtn.addEventListener("change",function(){
-            let quantity=qbtn.value
-            mrp=Number(elem.price)
-            mrp=mrp*quantity
-
-            console.log("q",mrp)
-            finalMRP=mrp
             
-            let x=elem.offPrice*(quantity-1)
-            finalPrice=finalPrice+x
+            let selected=qbtn.value
+            console.log(selected)
 
+                elem.quantity=+selected
 
-            document.querySelector("#sub_total").innerText=finalPrice
+            localStorage.setItem("cart_data",JSON.stringify(cartData))
 
-            document.querySelector("#Total_Price").innerText=finalMRP
+            priceChange()
+            
         })
-        // let qopt1=document.createElement("option")
-        // qopt1.innerText="1"
+        
 
         let qopt2=document.createElement("option")
         qopt2.innerText="2"
@@ -102,6 +98,7 @@ function diplayCartData(data){
         removeBtn.addEventListener("click",function(){
             
             removeData(data,index)
+            priceChange()
         })
 
         let wishlistBtn=document.createElement("button")
@@ -154,3 +151,41 @@ document.querySelector("#final_amount").innerText="₹ "+ finalPrice
 document.querySelector("#toPay").addEventListener("click",function(){
     window.location.href="../payment page/payment.html"
 })
+
+
+function priceChange(){
+    var updatedTotalPrice=0
+    var updatedTotalMRP=0
+
+    var singleProductPrice=0
+    var singleProductMRP=0
+    let updatedCartData=JSON.parse(localStorage.getItem("cart_data"))
+  
+    updatedCartData.forEach(elem => {
+        updatedTotalPrice += Number(elem.quantity)*Number(elem.offPrice)
+        updatedTotalMRP +=Number(elem.quantity)*Number(elem.price)
+
+        // singleProductMRP=elem.quantity*elem.price
+        // singleProductPrice=elem.quantity*elem.offPrice
+
+        // let x= document.querySelector("#hello")
+        // x.innerText=singleProductPrice
+    });
+    console.log(updatedTotalPrice,"x")
+    document.querySelector("#final_amount").innerText="₹ "+ updatedTotalPrice
+
+    document.querySelector("#Total_Price").innerText=updatedTotalMRP
+
+    document.querySelector("#bag_discount").innerText=updatedTotalMRP-updatedTotalPrice
+
+    document.querySelector("#sub_total").innerText=updatedTotalPrice
+
+    document.querySelector("#saving").innerText="You are saving on this order ₹ "+(updatedTotalMRP-updatedTotalPrice)
+
+    localStorage.setItem("final-mrp",updatedTotalMRP)
+    localStorage.setItem("bag-discount",(updatedTotalMRP-updatedTotalPrice))
+    localStorage.setItem("total-payable",updatedTotalPrice)
+
+    // PayPrice.innerText="₹ " +singleProductPrice
+   
+}
