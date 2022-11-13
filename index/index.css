@@ -18,31 +18,39 @@
   font-family: "Montserrat", sans-serif;
   margin: 21px 24px;
 }
+.carousel {
+  /* background: #EEE; */
+}
 
-.slider_container {
-  /* border: 1px solid black; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 10px;
+.carousel-cell {
+  width: 33%;
+  /* height: 500px; */
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
 }
-.slider_container img {
-  width: 100%;
-  /* border: 1px solid red; */
-}
-.slider_controls {
-  /* border: 1px solid black; */
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
-.slider_controls > button {
-  background-color: rgb(231, 149, 47);
-  border: 3px solid rgb(231, 149, 47);
-  margin: 5px;
-  border-radius: 4px;
+img{
+    width: 50%;
 }
+
+
+
+
+
+
+
+
 .crazy_banner {
   /* border: 1px solid black; */
   margin: 25px 0px;
@@ -88,7 +96,7 @@
 #heading_popular_category,
 #discount,
 #bestsellers,
-#clearance {
+#clearance,#stoopid {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -98,6 +106,11 @@
 .popular_categories>div{
   /* border: 1px solid red; */
   text-align: center;
+}
+.popular_categories>div>img{
+/* border: 1px solid blue; */
+width: 100%;
+
 }
 
 .discount_box {
@@ -114,7 +127,41 @@
   width: 100%;
 }
 
-.best_sellers_box,
+.Carousel {
+  /* background: #EEE; */
+  /* border: 1px solid red; */
+margin-top: -190px;
+}
+
+.Carousel-cell {
+  width: 25%;
+  /* height: 100px; */
+  /* margin-right: 10px; */
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.Carousel-cell.is-selected {
+  /* background: #ED2; */
+}
+
+/* cell number */
+.Carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 1px;
+  color: rgb(255, 255, 255);
+}
+.Carousel-cell img{
+  width: 95%;
+}
+
+
+
+
 .clearance_zone_box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -125,7 +172,7 @@
 
   margin: auto;
 }
-.best_sellers_box img,
+
 .clearance_zone_box img {
   width: 100%;
   /* border: 1px solid red; */
@@ -255,6 +302,9 @@
   margin-left: -25px;
   display: flex;
   flex-direction: column;
+}
+#about_app > div:nth-child(3)>img{
+width: 100%;
 }
 #about_app a {
   display: block;

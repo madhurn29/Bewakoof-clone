@@ -15,6 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="./nav.css" />
     <title>Home Page</title>
   </head>
@@ -145,27 +147,21 @@
     </div>
 
     <!-- slider -->
+    <div class="carousel"  data-flickity='{ "wrapAround": true,
+"autoPlay": true }' >
+ 
+    
+    <img class="carousel-cell" src="https://images.bewakoof.com/uploads/grid/app/Oversized-sweatshirt-and-hoodies-1x1-m-1667798822.jpg" alt=""/>
+    <img class="carousel-cell" src="https://images.bewakoof.com/uploads/grid/app/WinterWear-Nov-StaticBanner-men-Printed-1667897007.jpg" alt=""/>
+    <img class="carousel-cell" src="https://images.bewakoof.com/uploads/grid/app/official-merch-1x1-Static-banner-1667926321.png" alt=""/>
+    <img class="carousel-cell" src="https://images.bewakoof.com/uploads/grid/app/Oversized-sweatshirt-and-hoodies-1x1-m-1668264742.jpg" alt=""/>
+    <img class="carousel-cell" src="https://images.bewakoof.com/uploads/grid/app/streetwear-men-new-1668157457.jpg" alt=""/>
+    <img class="carousel-cell" src="https://images.bewakoof.com/uploads/grid/app/OVERSIZED-TEES-1X1-refreshed-m-1668144512.gif" alt=""/>
+  
 
-    <div class="slider_container">
-      <img
-        src="https://images.bewakoof.com/uploads/grid/app/Oversized-sweatshirt-and-hoodies-1x1-m-1667798822.jpg"
-        alt=""
-      />
-      <img
-        src="https://images.bewakoof.com/uploads/grid/app/very-peri-collection-1x1-m-1667926321.jpg"
-        alt=""
-      />
-      <img
-        src="https://images.bewakoof.com/uploads/grid/app/official-merch-1x1-Static-banner-1667926321.png"
-        alt=""
-      />
-    </div>
-    <!-- <div class="slider_controls">
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-    </div> -->
+</div>
+
+    
 
     <div class="crazy_banner">
       <img
@@ -216,36 +212,36 @@
 
     <!-- bestsellers -->
     <p id="bestsellers">BEST SELLERS</p>
-    <div class="best_sellers_box">
-      <div>
+    <div class="Carousel" data-flickity='{ "wrapAround": true, "groupCells": true }'>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/men-s-black-the-purrnisher-graphic-printed-oversized-t-shirt-552898-1667807326-1.jpg"
           alt=""
         />
         <p><span style="font-size: 12px">₹</span> 599</p>
       </div>
-      <div>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/men-s-black-inspire-graphic-printed-oversized-t-shirt-553301-1667891608-1.jpg"
           alt=""
         />
         <p><span style="font-size: 12px">₹</span> 599</p>
       </div>
-      <div>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/men-s-white-what-the-duck-graphic-printed-oversized-t-shirt-553308-1667891931-1.jpg"
           alt=""
         />
         <p><span style="font-size: 12px">₹</span> 599</p>
       </div>
-      <div>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/men-s-yellowtail-game-over-minimal-typography-oversized-t-shirt-540906-1667499263-1.jpg"
           alt=""
         />
         <p><span style="font-size: 12px">₹</span> 599</p>
       </div>
-      <div>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/men-s-black-growing-up-is-overrated-graphic-printed-oversized-t-shirt-552896-1667807394-1.jpg"
           alt=""
@@ -256,63 +252,82 @@
         </p>
       </div>
     </div>
-
+br
     <a href="" id="view_all">VIEW ALL</a>
 
-    <div id="poster_slider">
-      <img
+    <div class="carousel"  data-flickity='{ "wrapAround": true,
+    "autoPlay": true }' >
+      <img class="carousel-cell"
         src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Henley-Tshirts--1--1667822881.jpg"
         alt=""
       />
-      <img
+      <img class="carousel-cell"
         src="https://images.bewakoof.com/uploads/grid/app/comfy-solid-joggers-1x1-m-1667802359.jpg"
         alt=""
       />
-      <img
+      <img class="carousel-cell"
         src="https://images.bewakoof.com/uploads/grid/app/OVERSIZED-TEES-1X1-m-1667812348.gif"
         alt=""
       />
+      <img class="carousel-cell" 
+       src="https://images.bewakoof.com/uploads/grid/app/Flatknit-sweater-1x1-m-1667910222.jpg" alt="">
+      <img class="carousel-cell" src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Black-Panther-1668149126.gif" alt="">
+      <img class="carousel-cell" src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Sleeveless-Jackets-Men-1668162873.jpg" alt="">
     </div>
-
+<br>
     <p id="clearance">CLERANCE ZONE</p>
-    <div class="clearance_zone_box">
-      <div>
+    <div class="Carousel" data-flickity='{ "wrapAround": true, "groupCells": true }'>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/men-s-white-t-shirt-1093-1655746832-1.jpg"
           alt=""
         />
         <p>₹ 599</p>
       </div>
-      <div>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/men-s-full-sleeve-t-shirts-1094-1659608683-1.jpg"
           alt=""
         />
         <p>₹ 599</p>
       </div>
-      <div>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/blue-vibes-half-sleeve-t-shirt-black-298517-1655749399-1.jpg"
           alt=""
         />
         <p>₹ 599</p>
       </div>
-      <div>
+      <div class="Carousel-cell">
         <img
           src="https://images.bewakoof.com/t320/men-s-black-t-shirt-106-1665669034-5.jpg"
           alt=""
         />
         <p>₹ 599</p>
       </div>
-      <div>
-        <img
+      <div class="Carousel-cell">
+        <img 
           src="https://images.bewakoof.com/t320/gyaan-half-sleeve-t-shirt-black-310957-1655748557-1.jpg"
           alt=""
         />
         <p>₹ 599</p>
       </div>
+      <div class="Carousel-cell">
+        <img 
+          src="https://images.bewakoof.com/t320/men-s-blue-busy-doing-nothing-t-shirt-287587-1655747848-4.jpg"
+          alt=""
+        />
+        <p>₹ 599</p>
+      </div>
+      <div class="Carousel-cell">
+        <img 
+          src="https://images.bewakoof.com/t320/white-half-sleeve-t-shirt-105-1666332512-1.jpg"
+          alt=""
+        />
+        <p>₹ 599</p>
+      </div>
     </div>
-
+<br>
     <a href="" id="view_all">VIEW ALL</a>
 
     <p id="stoopid">STOOPID COLLECTION</p>

@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./signup.css" />
+    <link rel="stylesheet" href="./loginByid.css" />
     <link rel="stylesheet" href="../index/nav.css" />
-    <title>Sign up</title>
+    <script
+      src="https://kit.fontawesome.com/9a460dffa9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login by ID</title>
   </head>
   <body>
     <div id="topbarsection">
@@ -25,15 +33,15 @@
     </div>
     <div id="navbar">
       <a href="../index/index.html"
-        ><img src="../index/black logo.png" id="logo" alt="" style="margin-top: 13px;"
+        ><img src="../index/black logo.png" alt= "" style="margin-top: 9px;"
       /></a>
       <div id="navtags">
-        <a href="../Mens page/mens.html">MEN</a>
+        <a href="../index/index.html">MEN</a>
         <a href="">WOMEN</a>
         <a href="">MOBILE COVERS</a>
         <div class="mens_menu">
           <div class="content">
-            <div class="row">
+            <!-- <div class="row">
               <header>Top Wear</header>
               <ul class="mens_content">
                 <li><a href="">Printed T-shirts</a></li>
@@ -60,7 +68,7 @@
                 <li><a href="">Shorts</a></li>
                 <li><a href="">Jeans & Denims</a></li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -68,77 +76,55 @@
       <div id="searchbar">
         <input
           type="text"
-          placeholder="Search by product,category or collection"
+          placeholder=" &#xF002; Search by product, category or collection" style="font-family:Montserrat, sans-serif, FontAwesome"
           id="search"
         />
         <div class="login">
           <p>|</p>
           <!-- <a href="">Login</a> -->
-          
+          <!-- <a href=""><</a> -->
+
+          <!-- <a href="">?</a> -->
           <div id="flag">
-            <a href=""><img
+            <img
               src="https://images.bewakoof.com/web/ic-web-head-wishlist.svg"
               alt=""
               id="wish-list"
-            /></a>
-            <a href="../Cart/cart.html"><img
+              style="width: 30%"
+            />
+            <img
               src="https://images.bewakoof.com/web/ic-web-head-cart.svg"
               alt=""
-              id="bag"
-            /></a>
-            <a href=""><img
+              id="bag" style="width: 30%"
+            />
+            <!-- <img
               src="https://images.bewakoof.com/web/india-flag-round-1639566913.png"
               alt="indian flag"
               id="indian-flag"
-            /></a>
+            /> -->
+
+
+            
           </div>
         </div>
       </div>
     </div>
 
-    <!-- otp container -->
     <div class="background">
-      <div class="container">
-        <div class="posterBox">
-            <img src="https://images.bewakoof.com/web/desktop-sign-up-banner--1623760676.png" alt="">
-        </div>
-        <div class="signupForm">
-            <div class="form">
-                <div>
-                <p>SIgn Up</p>
-                </div>
-                <div>
-                    <p>Hi new buddy, let's you started with the Stoopid!</p>  
-                </div>
-                <div class="details">
-
-                    <div>
-                        <input type="text" placeholder="Name" id="Name">
-                    </div>
-                    <div>
-                        <input type="number" placeholder="Mobile" id="mobile">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email Id" id="mail">
-                    </div>
-                    <div>
-                        <input type="password" placeholder="Password" id="pass"
-                        >
-                    </div>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox"> <p>I want to recieve order updates on Whatsapp</p>
-                </div>
-                <div>
-                    <button id="proceed">PROCEED</button>
-                </div>
+        <div class="container">
+            <div class="loginBox">
+              <div>
+                Log in to your account
+              </div>  
+              <div>
+                <input type="text" placeholder="Email" id="mail">
+              </div>
+              <div>
+                <input type="password" placeholder="Password" id="pass">
+              </div>
+              <div><a href="">Forgot Password ?</a></div>
+              <div><button>Login</button></div>  
             </div>
         </div>
-
-        
-        
-      </div>
     </div>
-  </body>
-</html>
-<script src="../signup page/signup.js"></script>
+</body>
