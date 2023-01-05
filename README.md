@@ -1,4 +1,4 @@
-# Stoopid
+# Stoopid.com
 Clone of Bewakoof.com
 Live link:
 https://bewakoof-clone-nem201.netlify.app/
