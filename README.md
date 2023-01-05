@@ -7,7 +7,7 @@ Hello there, I would like to introduce you to the website I have cloned as a par
 
 Stoopid.com is the clone of Bewakoof.com. Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands. This is an individual project which was given by Masai school during the unit-2 curriculm.
 
-##Techstack used in this project:
+## Techstack used in this project:
 HTML 
 CSS
 Javascript
