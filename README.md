@@ -1,7 +1,7 @@
 # Stoopid.com
 Clone of Bewakoof.com
 ## Live link:
-https://bewakoof-clone-nem201.netlify.app/
+https://stoo-pid.netlify.app/
 
 Hello there, I would like to introduce you to the website I have cloned as a part of unit 2 construct week at Masai School.
 
