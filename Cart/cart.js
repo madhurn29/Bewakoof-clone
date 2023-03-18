@@ -124,7 +124,7 @@ function diplayCartData(data){
         productCard.append(productInfoBox,removeBOx)
         container.append(productCard)
 
-
+        document.querySelector("#itemNumbers").innerText=cartData.length+" items"
     });
 // console.log(totalPayPrice)
     
@@ -134,19 +134,21 @@ function removeData(data,index){
     data.splice(index,1)
     localStorage.setItem("cart_data",JSON.stringify(data))
     diplayCartData(cartData)
+    document.querySelector("#itemNumbers").innerText=cartData.length+" items"
 }
 console.log(finalPrice)
 console.log(finalMRP)
 console.log(saved)
 
-document.querySelector("#Total_Price").innerText=finalMRP
-localStorage.setItem("final-mrp",finalMRP)
-document.querySelector("#bag_discount").innerText=saved
+document.querySelector("#Total_Price").innerText=finalMRP || "0"
+localStorage.setItem("final-mrp",finalMRP) 
+document.querySelector("#bag_discount").innerText=saved || "0"
 localStorage.setItem("bag-discount",saved)
-document.querySelector("#sub_total").innerText=finalPrice
+document.querySelector("#sub_total").innerText=finalPrice || "0"
 localStorage.setItem("total-payable",finalPrice)
 document.querySelector("#saving").innerText="You are saving on this order ₹ "+saved
-document.querySelector("#final_amount").innerText="₹ "+ finalPrice
+document.querySelector("#final_amount").innerText="₹ "+ (finalPrice || "0")
+
 
 document.querySelector("#toPay").addEventListener("click",function(){
     window.location.href="../payment page/payment.html"
